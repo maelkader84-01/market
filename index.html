@@ -673,19 +673,31 @@
 
             // --- بيانات المنتجات ---
             const products = [
-                { id: 1, name: 'بيض ابيض', category: 'vegetables', oldPrice: 15, newPrice: 12, image:'بيض ابيض.jpg' },
-                { id: 2, name: 'بيض احمر', category: 'dairy', oldPrice: 25, newPrice: 22, image:'بيض احمر.jpg' },
-                { id: 3, name: 'جبنة رومى', category: 'canned', oldPrice: 30, newPrice: 28, image:'جبنة رومى.jpg' },
-                { id: 4, name: 'جبنة فيتا', category: 'drinks', oldPrice: 10, newPrice: 8, image:'جبنة فيتا.jpg' },
-                { id: 5, name: 'جبنة براميلى', category: 'vegetables', oldPrice: 10, newPrice: 7, image:'جبنة براميلى.jpg' },
-                { id: 6, name: 'لانشون حلوانى', category: 'dairy', oldPrice: 50, newPrice: 45, image:'لانشون حلونى.png' },
-                { id: 7, name: 'لبن بخيرة', category: 'canned', oldPrice: 40, newPrice: 35, image:'لبن بخيرة.jpg' },
-                { id: 8, name: 'ارز الساعة', category: 'drinks', oldPrice: 20, newPrice: 18, image:'71.png' },
-                { id: 9, name: 'بطاطس حلوة', category: 'vegetables', oldPrice: 18, newPrice: 15, image:'https://i.ibb.co/2k8qF0C/sweet-potato.jpg' },
-                { id: 10, name: 'زبادي بالفواكه', category: 'dairy', oldPrice: 12, newPrice: 10, image:'https://i.ibb.co/3s3qL1Y/yogurt.jpg' },
-                { id: 11, name: 'تفاح أحمر', category: 'vegetables', oldPrice: 25, newPrice: 20, image:'https://i.ibb.co/68s4WdP/apple.jpg' },
-                { id: 12, name: 'مياه معدنية', category: 'drinks', oldPrice: 5, newPrice: 4, image:'https://i.ibb.co/hK2YQ2p/water.jpg' },
-            ];
+                {name: "لانشون حلوانى 250جم", oldPrice: "80.00 جنيه", newPrice: "70.00 جنيه", discount: "-12%", image: "image/79.png", description: "جودة عالية وأسعار منافسة"},
+                {name: "لانشون اوريجينتال 250جم", oldPrice: "35.00 جنيه", newPrice: "27.00 جنيه", discount: "-12%", image: "image/78.png", description: "جودة عالية وأسعار منافسة"},
+                {name: "ملح الخير 1 كجم", oldPrice: "10.00 جنيه", newPrice: "5.00 جنيه", discount: "-12%", image: "image/104.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "علبة سمنة الأصيل 2 كجم", oldPrice: "145.00 جنيه", newPrice: "130.00 جنيه", discount: "-10%", image: "image/24.jpg", description: "جودة عالية وأسعار منافسة"},              
+                {name: "ارز زاد 5 كجم", oldPrice: "180.00 جنيه", newPrice: "165.00 جنيه", discount: "-10%", image: "image/70.png", description: "جودة عالية وأسعار منافسة"},              
+                {name: "ارز الساعة 5 كجم", oldPrice: "185.00 جنيه", newPrice: "175.00 جنيه", discount: "-10%", image: "image/71.png", description: "جودة عالية وأسعار منافسة"},              
+                {name: "ارز الضحى 5 كجم", oldPrice: "220.00 جنيه", newPrice: "200.00 جنيه", discount: "-10%", image: "image/69.png", description: "جودة عالية وأسعار منافسة"},              
+                {name: "شاى ليبتون 250جم", oldPrice: "65.00 جنيه", newPrice: "58.00 جنيه", discount: "-10%", image: "image/72.png", description: "جودة عالية وأسعار منافسة"},                              
+                {name: "5 علبة دومتى 250جم أطعم", oldPrice: "115.00 جنيه", newPrice: "99.00 جنيه", discount: "-10%", image: "image/48.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "2 كيس سحلب علاء الدين 250جم", oldPrice: "60.00 جنيه", newPrice: "50.00 جنيه", discount: "-20%", image: "image/47.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "1 كيس سحلب علاء الدين 400جم", oldPrice: "50.00 جنيه", newPrice: "45.00 جنيه", discount: "-20%", image: "image/61.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "اوكسى 2.5 كجم اوتوماتيك", oldPrice: "190.00 جنيه", newPrice: "180.00 جنيه", discount: "-20%", image: "image/63.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "بخاخ معطر جو فلاور 2", oldPrice: "110.00 جنيه", newPrice: "100.00 جنيه", discount: "-20%", image: "image/66.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "طبق بيض ابيض وزن 2 كجم", oldPrice: "140.00 جنيه", newPrice: "128.00 جنيه", discount: "-10%", image: "image/01.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "طبق بيض احمر وزن 2 كجم", oldPrice: "145.00 جنيه", newPrice: "130.00 جنيه", discount: "-10%", image: "image/02.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "بيضة (ابيض او احمر )", oldPrice: "5.50.00 جنيه", newPrice: "5.00 جنيه", discount: "-20%", image: "image/04.jpg", description: "جودة عالية وأسعار منافسة"},
+                {name: "كيلو سمن سايب", oldPrice: "120.00 جنيه", newPrice: "105.00 جنيه", discount: "-20%", image: "image/22.jpg", description: "سمن طبيعي 100%"},
+                {name: "كيلو أرز وسط", oldPrice: "28.00 جنيه", newPrice: "22.00 جنيه", discount: "-20%", image: "image/05.jpg", description: "أفضل أنواع الأرز"},
+                {name: "2 زيت الجودة 1 كجم", oldPrice: "150.00 جنيه", newPrice: "129.00 جنيه", discount: "-25%", image: "image/91.png", description: "زيت نباتي صحي"},
+                {name: "2 كيلو دقيق سايب", oldPrice: "40.00 جنيه", newPrice: "35.00 جنيه", discount: "-25%", image: "image/21.jpg", description: "دقيق عالي الجودة"},
+                {name: "كيلو جبنة ثلاجة", oldPrice: "140.00 جنيه", newPrice: "120.00 جنيه", discount: "-15%", image: "image/26.jpg", description: "جبنة طازجة من أفضل المزارع"},
+                {name: "كيلو جبنة براملى", oldPrice: "180.00 جنيه", newPrice: "160.00 جنيه", discount: "-12%", image: "image/27.jpg", description: "جبنة براملى ممتازة"},
+                {name: "شكارة ارز 25 كجم", oldPrice: "620.00 جنيه", newPrice: "540.00 جنيه", discount: "-8%", image: "image/07.jpg", description: "توفير كبير عند الشراء بالجملة"},
+                {name: "برجر المراعى عائلى", oldPrice: "125.00 جنيه", newPrice: "115.00 جنيه", discount: "-8%", image: "image/37.jpg", description: "لحم بقري عالي الجودة"},
+                {name: "كيلو رنجة درجة أولى", oldPrice: "140.00 جنيه", newPrice: "115.00 جنيه", discount: "-18%", image: "image/40.jpg", description: "رنجة طازجة من أفضل الأنواع"}            ];
 
             let cart = [];
 
@@ -869,6 +881,7 @@
 </body>
 
 </html>
+
 
 
 
